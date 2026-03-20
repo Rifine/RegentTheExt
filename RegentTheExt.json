@@ -1,0 +1,11 @@
+{
+    "id": "RegentTheExt",
+    "name": "储君卡牌拓展",
+    "author": "Not白毛控",
+    "description": "为原版角色储君添加了若干卡牌",
+    "version": "0.1.0",
+    "has_pck": true,
+    "has_dll": true,
+    "dependencies": [],
+    "affects_gameplay": true
+}

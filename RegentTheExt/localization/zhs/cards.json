@@ -1,0 +1,10 @@
+{
+  "GIMME.title": "拿来！",
+  "GIMME.description": "将[gold]抽牌堆[/gold]的随机{Cards:diff()}张无色攻击卡放入你的[gold]手牌[/gold]，一回合内其费用减少{energyPrefix:energyIcons(1)}。",
+  "THRONEFALL.title": "君临塔下",
+  "THRONEFALL.description": "回合结束时，若[gold]手牌[/gold]中有[gold]君王之剑[/gold]，则对所有敌人造成{ThronefallDamage:diff()}点伤害。",
+  "HANGING_EDGE.title": "垂悬剑刃",
+  "HANGING_EDGE.description": "将[gold]手牌[/gold]中的[gold]君王之剑[/gold]对一名敌人打出，并将其[gold]消耗[/gold]。",
+  "HEIRS_AGONY.title": "悬梁刺股",
+  "HEIRS_AGONY.description": "抽{Cards:diff()}张牌，\n回合结束时受到{Damage:diff()}点伤害，每次[gold]格挡[/gold]伤害时，[gold]铸造[/gold]相同数值。"
+}
