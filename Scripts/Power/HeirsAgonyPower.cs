@@ -11,7 +11,7 @@ public class HeirsAgonyPower : PowerModel
 {
     public override PowerType Type => PowerType.Buff;
 
-    public override PowerStackType StackType => PowerStackType.Counter;
+    public override PowerStackType StackType => PowerStackType.None;
 
     public override bool IsInstanced => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
