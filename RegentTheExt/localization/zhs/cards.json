@@ -14,5 +14,7 @@
   "HEARKEN.title": "纳谏",
   "HEARKEN.description": "添加{Cards:diff()}张随机[gold]仆从[/gold]牌加入[gold]手牌[/gold]。",
   "ATOMIC_STRIKE.title": "原子打击",
-  "ATOMIC_STRIKE.description": "造成{Damage:diff()}点伤害，\n给予等同于所造成伤害的[gold]瓦解[/gold]。"
+  "ATOMIC_STRIKE.description": "造成{Damage:diff()}点伤害，\n给予等同于所造成伤害的[gold]瓦解[/gold]。",
+  "COALESCE.title": "凝聚碎屑",
+  "COALESCE.description": "[gold]消耗[/gold]状态牌时，[gold]手牌[/gold]中随机一张牌在本回合耗能减少一。"
 }

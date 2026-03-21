@@ -36,8 +36,4 @@ public class HangingEdge : CardModel
             break;
         }
     }
-
-    protected override void OnUpgrade()
-    {
-    }
 }
