@@ -12,7 +12,7 @@ namespace RTE.Scripts.Cards;
 
 public class HeirsAgony : CardModel
 {
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge().Append(HoverTipFactory.FromPower<DisintegrationPower>());
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1), new DamageVar(2, ValueProp.Unpowered)];
     public HeirsAgony() : base(0, CardType.Power, CardRarity.Common, TargetType.Self, true)

@@ -10,8 +10,9 @@ namespace RTE.Scripts.Cards;
 
 public class AfterGlow : CardModel
 {
+    public override int CanonicalStarCost => 2;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsUpgraded ? [HoverTipFactory.FromKeyword(CardKeyword.Retain), HoverTipFactory.FromPower<VigorPower>()] : [HoverTipFactory.FromPower<VigorPower>()];
-    public AfterGlow() : base(1, CardType.Power, CardRarity.Common, TargetType.Self, true)
+    public AfterGlow() : base(0, CardType.Power, CardRarity.Common, TargetType.Self, true)
     {
     }
 
