@@ -17,7 +17,7 @@ public class MinionEntry : CardModel
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(3m, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4m, ValueProp.Move)];
     public override bool GainsBlock => true;
     
     public MinionEntry() : base(0, CardType.Attack, CardRarity.Token, TargetType.AllEnemies)
@@ -37,6 +37,6 @@ public class MinionEntry : CardModel
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(2m);
+        DynamicVars.Damage.UpgradeValueBy(3m);
     }
 }
