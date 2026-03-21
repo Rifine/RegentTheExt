@@ -12,7 +12,7 @@ public class Coalesce : CardModel
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust), base.EnergyHoverTip];
 
-    public Coalesce() : base(2, CardType.Power, CardRarity.Rare, TargetType.Self) {}
+    public Coalesce() : base(1, CardType.Power, CardRarity.Rare, TargetType.Self) {}
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
@@ -21,6 +21,6 @@ public class Coalesce : CardModel
 
     protected override void OnUpgrade()
     {
-        base.EnergyCost.UpgradeBy(-1);
+        CardCmd.ApplyKeyword(this, CardKeyword.Innate);
     }
 }
