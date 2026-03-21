@@ -20,7 +20,7 @@ public class MinionEntry : CardModel
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(3m, ValueProp.Move)];
     public override bool GainsBlock => true;
     
-    public MinionEntry() : base(0, CardType.Attack, CardRarity.Token, TargetType.AllEnemies, false)
+    public MinionEntry() : base(0, CardType.Attack, CardRarity.Token, TargetType.AllEnemies)
     {
     }
 
