@@ -25,7 +25,7 @@ public class HangingEdge : CardModel
             if (!CombatManager.Instance.IsOverOrEnding)
             {
                 await CardCmd.AutoPlay(choiceContext, blade, cardPlay.Target, AutoPlayType.Default, false, false);
-                continue;   
+                continue;
             }
             break;
         }

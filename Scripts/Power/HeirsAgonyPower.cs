@@ -7,7 +7,9 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
-public class HeirsAgonyPower : PowerModel
+namespace RTE.Scripts.Powers;
+
+public sealed class HeirsAgonyPower : PowerModel
 {
     public override PowerType Type => PowerType.Buff;
 

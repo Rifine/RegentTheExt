@@ -3,5 +3,7 @@
   "THRONEFALL_POWER.description": "回合结束时，若手牌中有[gold]君王之剑[/gold]，则对所有敌人造成9点伤害",
   "THRONEFALL_POWER.smartDescription": "回合结束时，若手牌中有[gold]君王之剑[/gold]，则对所有敌人造成{Amount}点伤害",
   "HEIRS_AGONY_POWER.title": "悬梁刺股",
-  "HEIRS_AGONY_POWER.description": "[gold]格挡[gold]伤害时，[gold]铸造[/gold]等同于被格挡伤害的数值。"
+  "HEIRS_AGONY_POWER.description": "[gold]格挡[gold]伤害时，[gold]铸造[/gold]等同于被格挡伤害的数值。",
+  "AFTER_GLOW_POWER.title": "余晖",
+  "AFTER_GLOW_POWER.description": "回合结束时，获得等同于手牌数的[gold]活力[/gold]。"
 }

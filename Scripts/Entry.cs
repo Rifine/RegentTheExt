@@ -16,7 +16,7 @@ public class Entry
 
         Entry.AddCards();
 
-        Log.Debug("[RTE] initialized");
+        Log.Debug("[RTE] initialized.");
     }
 
     static void AddCards()
@@ -25,10 +25,14 @@ public class Entry
         AddCardToPool<Thronefall>();
         AddCardToPool<HangingEdge>();
         AddCardToPool<HeirsAgony>();
+        AddCardToPool<AfterGlow>();
+        AddCardToPool<Hearken>();
+        ModHelper.AddModelToPool<TokenCardPool, MinionEntry>();
     }
 
-    static void AddCardToPool<Card>() where Card: CardModel
+    static void AddCardToPool<Card>() where Card : CardModel
     {
         ModHelper.AddModelToPool<RegentCardPool, Card>();
+        Log.Info($"[RTE] add \"{typeof(Card).Name}\" to Regent card pool.");
     }
 }

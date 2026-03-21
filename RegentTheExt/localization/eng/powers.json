@@ -1,7 +1,0 @@
-{
-  "THRONEFALL_POWER.title": "Thronefall",
-  "THRONEFALL_POWER.description": "At the end of your turn, if you have [gold]Sovereign Blade[/gold] in your hand, deal 9 damage to ALL enemies.",
-  "THRONEFALL_POWER.smartDescription": "At the end of your turn, if you have [gold]Sovereign Blade[/gold] in your hand, deal {Amount} damage to ALL enemies.",
-  "HEIRS_AGONY_POWER.title": "Heir's Agony",
-  "HEIRS_AGONY_POWER.description": "When you [gold]block[/gold] damage, [gold]Forge[/gold] an amount equal to the damage blocked."
-}

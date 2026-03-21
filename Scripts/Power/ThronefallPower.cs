@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace RTE.Scripts.Power;
+namespace RTE.Scripts.Powers;
 
 public sealed class ThronefallPower : PowerModel
 {
@@ -24,12 +24,7 @@ public sealed class ThronefallPower : PowerModel
 
     public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {
-        if (side != base.Owner.Side)
-        {
-            return;
-        }
-
-        if (base.Owner.IsPlayer)
+        if (side == base.Owner.Side && base.Owner.IsPlayer)
         {
             Flash();
             CardPile hand = PileType.Hand.GetPile(base.Owner.Player);

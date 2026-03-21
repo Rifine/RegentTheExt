@@ -22,7 +22,7 @@ public class Gimme : CardModel
             .Where((CardModel c) => c.VisualCardPool.IsColorless && c.Type == CardType.Attack)
             .ToList()
             .StableShuffle(base.Owner.RunState.Rng.Shuffle)
-            .Take(base.DynamicVars.Cards.IntValue);  
+            .Take(base.DynamicVars.Cards.IntValue);
         foreach (CardModel card in cards)
         {
             if (card != null)

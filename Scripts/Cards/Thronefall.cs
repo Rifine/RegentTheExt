@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
-using RTE.Scripts.Power;
+using RTE.Scripts.Powers;
 
 namespace RTE.Scripts.Cards;
 
