@@ -15,6 +15,8 @@
   "ATOMIC_TUNNEL.description": "造成{Damage:diff()}点伤害，给予{DisintegrationPower:diff()}层[gold]瓦解[/gold]。\n将此牌返回你的手牌。",
   "HEARKEN.title": "纳谏",
   "HEARKEN.description": "添加{Cards:diff()}张随机[gold]仆从[/gold]牌加入[gold]手牌[/gold]。",
+  "MOON_LIGHT.title": "月光",
+  "MOON_LIGHT.description": "抽{Cards:diff()}张牌，如果抽到的是技能牌，则[gold]铸造[/gold]{Forge:diff()}",
   "COALESCE.title": "凝聚",
   "COALESCE.description": "[gold]消耗[/gold]任意牌时，获得{singleStarIcon}。"
 }

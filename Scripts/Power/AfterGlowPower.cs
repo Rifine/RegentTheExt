@@ -21,6 +21,7 @@ public sealed class AfterGlowPower : PowerModel
     {
         if (side == base.Owner.Side && base.Owner.IsPlayer)
         {
+            Flash();
             CardPile hand = PileType.Hand.GetPile(base.Owner.Player);
             int numberOfCardsInHand = hand.Cards.Count();
             await PowerCmd.Apply<VigorPower>(base.Owner, numberOfCardsInHand, base.Owner, null);

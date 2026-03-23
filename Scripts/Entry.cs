@@ -29,6 +29,7 @@ public class Entry
         AddCardToPool<Hearken>();
         AddCardToPool<AtomicTunnel>();
         AddCardToPool<Coalesce>();
+        AddCardToPool<MoonLight>();
         ModHelper.AddModelToPool<TokenCardPool, MinionEntry>();
     }
 
