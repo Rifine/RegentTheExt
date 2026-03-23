@@ -26,10 +26,10 @@ public class MinionEntry : CardModel
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        VfxCmd.PlayFullScreenInCombat("vfx/vfx_dramatic_entrance_fullscreen");
         AttackCommand attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
             .FromCard(this)
             .TargetingAllOpponents(base.CombatState)
-            .WithAttackerFx(() => NMinionDiveBombVfx.Create(base.Owner.Creature, base.Owner.Creature))
             .Execute(choiceContext);
 
         await CreatureCmd.GainBlock(Owner.Creature, attackCommand.Results.Sum((DamageResult r) => r.TotalDamage), ValueProp.Move, cardPlay);

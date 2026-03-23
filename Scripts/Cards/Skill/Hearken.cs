@@ -13,7 +13,6 @@ public class Hearken : CardModel
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => AllMinionCardsHoverTips();
     public Hearken()
         : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self, true)
     { }
@@ -30,6 +29,4 @@ public class Hearken : CardModel
     }
 
     private static IEnumerable<CardModel> AllMinionCards() => ModelDb.CardPool<TokenCardPool>().AllCards.Where((CardModel c) => c.Tags.Contains(CardTag.Minion));
-    
-    private static IEnumerable<IHoverTip> AllMinionCardsHoverTips() =>  AllMinionCards().Select((CardModel c) => HoverTipFactory.FromCard(c));
 }

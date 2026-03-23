@@ -12,11 +12,11 @@
   "MINION_ENTRY.title": "仆从登场",
   "MINION_ENTRY.description": "对所有敌人造成{Damage:diff()}点伤害，\n获得等同与所造成伤害的[gold]格挡[/gold]。",
   "ATOMIC_TUNNEL.title": "原子隧穿",
-  "ATOMIC_TUNNEL.description": "造成{Damage:diff()}点伤害，给予{DisintegrationPower:diff()}层[gold]瓦解[/gold]。\n将此牌返回你的手牌。",
+  "ATOMIC_TUNNEL.description": "造成{Damage:diff()}点伤害，给予{DisintegrationPower:diff()}层[gold]瓦解[/gold]。\n将此牌返回你的[gold]手牌[/gold]。",
   "HEARKEN.title": "纳谏",
   "HEARKEN.description": "添加{Cards:diff()}张随机[gold]仆从[/gold]牌加入[gold]手牌[/gold]。",
   "MOON_LIGHT.title": "月光",
-  "MOON_LIGHT.description": "抽{Cards:diff()}张牌，如果抽到的是技能牌，则[gold]铸造[/gold]{Forge:diff()}",
+  "MOON_LIGHT.description": "抽{Cards:diff()}张牌，\n如果抽到的是技能牌，则[gold]铸造[/gold]{Forge:diff()}",
   "COALESCE.title": "凝聚",
   "COALESCE.description": "[gold]消耗[/gold]任意牌时，获得{singleStarIcon}。"
 }
