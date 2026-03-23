@@ -27,7 +27,7 @@ public class Entry
         AddCardToPool<HeirsAgony>();
         AddCardToPool<AfterGlow>();
         AddCardToPool<Hearken>();
-        AddCardToPool<AtomicStrike>();
+        AddCardToPool<AtomicTunnel>();
         AddCardToPool<Coalesce>();
         ModHelper.AddModelToPool<TokenCardPool, MinionEntry>();
     }

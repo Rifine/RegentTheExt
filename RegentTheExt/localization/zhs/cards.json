@@ -1,20 +1,20 @@
 {
   "GIMME.title": "拿来！",
-  "GIMME.description": "将[gold]抽牌堆[/gold]的随机{Cards:diff()}张无色攻击卡放入你的[gold]手牌[/gold]，一回合内其费用减少{energyPrefix:energyIcons(1)}。",
+  "GIMME.description": "将[gold]抽牌堆[/gold]的随机{Cards:diff()}张无色攻击牌放入你的[gold]手牌[/gold]，一回合内其费用减少{energyPrefix:energyIcons(1)}。",
   "THRONEFALL.title": "君临塔下",
   "THRONEFALL.description": "回合结束时，若[gold]手牌[/gold]中有[gold]君王之剑[/gold]，则对所有敌人造成{ThronefallDamage:diff()}点伤害。",
   "HANGING_EDGE.title": "垂悬剑刃",
-  "HANGING_EDGE.description": "{IfUpgraded:show: [gold]铸造[/gold]{Forge:diff()}。\n|}将[gold]手牌[/gold]中的[gold]君王之剑[/gold]对一名敌人打出，并将其[gold]消耗[/gold]。",
+  "HANGING_EDGE.description": "{IfUpgraded:show: [gold]铸造[/gold]{Forge:diff()}。\n}将[gold]手牌[/gold]中的[gold]君王之剑[/gold]对一名敌人打出，并将其[gold]消耗[/gold]。",
   "HEIRS_AGONY.title": "悬梁刺股",
-  "HEIRS_AGONY.description": "抽{Cards:diff()}张牌，\n获得{Damage:diff()}点[gold]瓦解[/gold]，每次[gold]格挡[/gold]伤害时，[gold]铸造[/gold]相同数值。",
+  "HEIRS_AGONY.description": "抽{Cards:diff()}张牌，\n获得{Damage:diff()}层[gold]瓦解[/gold]，每次[gold]格挡[/gold]伤害时，[gold]铸造[/gold]相同数值。",
   "AFTER_GLOW.title": "余晖",
-  "AFTER_GLOW.description": "{IfUpgraded:show: 将你的手牌[gold]保留[/gold]一回合。\n|}回合结束时，获得等同于手牌数的[gold]活力[/gold]。",
+  "AFTER_GLOW.description": "{IfUpgraded:show: 将你的手牌[gold]保留[/gold]一回合。\n}回合结束时，获得等同于手牌数的[gold]活力[/gold]。",
   "MINION_ENTRY.title": "仆从登场",
   "MINION_ENTRY.description": "对所有敌人造成{Damage:diff()}点伤害，\n获得等同与所造成伤害的[gold]格挡[/gold]。",
+  "ATOMIC_TUNNEL.title": "原子隧穿",
+  "ATOMIC_TUNNEL.description": "造成{Damage:diff()}点伤害，给予{DisintegrationPower:diff()}层[gold]瓦解[/gold]。\n将此牌返回你的手牌。",
   "HEARKEN.title": "纳谏",
   "HEARKEN.description": "添加{Cards:diff()}张随机[gold]仆从[/gold]牌加入[gold]手牌[/gold]。",
-  "ATOMIC_STRIKE.title": "原子打击",
-  "ATOMIC_STRIKE.description": "造成{Damage:diff()}点伤害，\n给予等同于所造成伤害的[gold]瓦解[/gold]。",
-  "COALESCE.title": "凝聚碎屑",
-  "COALESCE.description": "[gold]消耗[/gold]状态牌时，[gold]手牌[/gold]中随机一张牌在本回合耗能减少一。"
+  "COALESCE.title": "凝聚",
+  "COALESCE.description": "[gold]消耗[/gold]任意牌时，获得{singleStarIcon}。"
 }
