@@ -28,7 +28,7 @@ public class KinglyAura : CardModel
             _hitsCount = value;
         }
     }
-    public KinglyAura() : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.RandomEnemy) {}
+    public KinglyAura() : base(2, CardType.Attack, CardRarity.Rare, TargetType.RandomEnemy) {}
 
     public override Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
     {
