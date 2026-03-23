@@ -3,10 +3,8 @@ using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace RTE.Scripts.Cards;
@@ -20,9 +18,7 @@ public class MinionEntry : CardModel
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(4m, ValueProp.Move)];
     public override bool GainsBlock => true;
     
-    public MinionEntry() : base(0, CardType.Attack, CardRarity.Token, TargetType.AllEnemies)
-    {
-    }
+    public MinionEntry() : base(0, CardType.Attack, CardRarity.Token, TargetType.AllEnemies) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

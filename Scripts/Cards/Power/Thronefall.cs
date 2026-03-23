@@ -17,9 +17,7 @@ public class Thronefall : CardModel
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<SovereignBlade>();
 
-    public Thronefall() : base(1, CardType.Power, CardRarity.Rare, TargetType.AllAllies, true)
-    {
-    }
+    public Thronefall() : base(1, CardType.Power, CardRarity.Rare, TargetType.AllAllies, true) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

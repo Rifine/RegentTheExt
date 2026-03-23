@@ -11,9 +11,7 @@ public class Gimme : CardModel
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
 
-    public Gimme() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self, true)
-    {
-    }
+    public Gimme() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self, true) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

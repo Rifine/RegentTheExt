@@ -30,6 +30,7 @@ public class Entry
         AddCardToPool<AtomicTunnel>();
         AddCardToPool<Coalesce>();
         AddCardToPool<MoonLight>();
+        AddCardToPool<KinglyAura>();
         ModHelper.AddModelToPool<TokenCardPool, MinionEntry>();
     }
 

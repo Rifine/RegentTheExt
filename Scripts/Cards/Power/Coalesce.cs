@@ -11,7 +11,7 @@ public class Coalesce : CardModel
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
 
-    public Coalesce() : base(1, CardType.Power, CardRarity.Rare, TargetType.Self) {}
+    public Coalesce() : base(1, CardType.Power, CardRarity.Rare, TargetType.Self) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

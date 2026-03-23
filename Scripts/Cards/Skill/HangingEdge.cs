@@ -14,9 +14,7 @@ public class HangingEdge : CardModel
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => IsUpgraded? HoverTipFactory.FromForge().Append(HoverTipFactory.FromKeyword(CardKeyword.Exhaust)) : [HoverTipFactory.FromCard<SovereignBlade>(), HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ForgeVar(4)];
-    public HangingEdge() : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy, true)
-    {
-    }
+    public HangingEdge() : base(0, CardType.Skill, CardRarity.Uncommon, TargetType.AnyEnemy, true) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
