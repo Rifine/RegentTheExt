@@ -46,7 +46,10 @@ public class KinglyAura : CardModel
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         int hitsCount = base.DynamicVars[_HitsKey].IntValue;
-        await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue).WithHitCount(hitsCount).FromCard(this).TargetingRandomOpponents(base.CombatState)
+        await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
+            .FromCard(this)
+            .TargetingRandomOpponents(base.CombatState)
+            .WithHitCount(hitsCount)
             .WithAttackerFx("vfx/vfx_attack_blunt")
             .Execute(choiceContext);
     }

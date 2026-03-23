@@ -14,7 +14,7 @@ class CoalescePower : PowerModel
 
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge().Append(HoverTipFactory.FromKeyword(CardKeyword.Exhaust));
 
     public override async Task AfterCardExhausted(PlayerChoiceContext choiceContext, CardModel card, bool causedByEthereal)
     {
@@ -26,7 +26,8 @@ class CoalescePower : PowerModel
         {
             return;
         }
+        await Cmd.Wait(0.25f);
         Flash();
-        await PlayerCmd.GainStars(Amount, base.Owner.Player);
+        await ForgeCmd.Forge(base.Amount, base.Owner.Player, this);
     }
 }

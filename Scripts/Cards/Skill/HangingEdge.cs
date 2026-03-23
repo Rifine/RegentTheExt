@@ -25,9 +25,9 @@ public class HangingEdge : CardModel
         IEnumerable<CardModel> blades = PileType.Hand.GetPile(base.Owner).Cards.Where((CardModel c) => c is SovereignBlade).ToList();
         foreach (CardModel blade in blades)
         {
-            blade.AddKeyword(CardKeyword.Exhaust);
-            if (!CombatManager.Instance.IsOverOrEnding)
+            if (!CombatManager.Instance.IsOverOrEnding && cardPlay.Target.IsAlive)
             {
+                blade.ExhaustOnNextPlay = true;
                 await CardCmd.AutoPlay(choiceContext, blade, cardPlay.Target, AutoPlayType.Default, false, false);
                 continue;
             }

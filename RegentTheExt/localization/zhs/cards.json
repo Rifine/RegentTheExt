@@ -18,7 +18,9 @@
   "MOON_LIGHT.title": "月光",
   "MOON_LIGHT.description": "抽{Cards:diff()}张牌，\n如果抽到的是技能牌，则[gold]铸造[/gold]{Forge:diff()}",
   "KINGLY_AURA.title": "王者威压",
-  "KINGLY_AURA.description": "对随机一名敌人造成{Damage:diff()}点伤害。\n每当你抽到这张牌，这张牌就攻击一次。{InCombat:\n（攻击[blue]{TotalHits:diff()}[/blue]次）}",
+  "KINGLY_AURA.description": "对随机一名敌人造成{Damage:diff()}点伤害。\n每当你抽到这张牌，这张牌就攻击一次。{InCombat:\n（攻击{TotalHits:diff()}次）}",
+  "SCATTERED_STARS.title": "铁花飞",
+  "SCATTERED_STARS.description": "对随机敌人造成{Damage:diff()}点伤害{HitsCount:diff()}次。\n每命中一个[gold]不同[/gold]的敌人，[gold]铸造[/gold]{Forge:diff()}",
   "COALESCE.title": "凝聚",
-  "COALESCE.description": "[gold]消耗[/gold]任意牌时，获得{singleStarIcon}。"
+  "COALESCE.description": "[gold]消耗[/gold]牌时，[gold]铸造[/gold]{CoalescePower:diff()}。"
 }
