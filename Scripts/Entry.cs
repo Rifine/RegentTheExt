@@ -32,6 +32,7 @@ public class Entry
         AddCardToPool<MoonLight>();
         AddCardToPool<KinglyAura>();
         AddCardToPool<ScatteredStars>();
+        AddCardToPool<Cooking>();
         ModHelper.AddModelToPool<TokenCardPool, MinionEntry>();
     }
 

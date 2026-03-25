@@ -12,7 +12,7 @@ public class KinglyAura : CardModel
     private const string _HitsKey = "TotalHits";
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain];
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(12, ValueProp.Move | ValueProp.SkipHurtAnim),
+        new DamageVar(10, ValueProp.Move | ValueProp.SkipHurtAnim),
         new DynamicVar(_HitsKey, 0)    
     ];
     private decimal _hitsCount;
@@ -54,7 +54,7 @@ public class KinglyAura : CardModel
 
     protected override void OnUpgrade()
     {
-        base.DynamicVars.Damage.UpgradeValueBy(4);
+        base.DynamicVars.Damage.UpgradeValueBy(2);
     }
 
     protected override void AfterDowngraded()

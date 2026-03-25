@@ -2,10 +2,12 @@
   "THRONEFALL_POWER.title": "君临塔下",
   "THRONEFALL_POWER.smartDescription": "回合结束时，若手牌中有[gold]君王之剑[/gold]，则对所有敌人造成[blue]{Amount}[blue]点伤害",
   "HEIRS_AGONY_POWER.title": "悬梁刺股",
-  "HEIRS_AGONY_POWER.description": "[gold]格挡[gold]伤害时，[gold]铸造[/gold]等同于被格挡伤害的数值。",
+  "HEIRS_AGONY_POWER.description": "[gold]格挡[gold]伤害时，[gold]铸造[/gold]等同于层数数值。",
+  "HEIRS_AGONY_POWER.smartDescription": "[gold]格挡[gold]伤害时，[gold]铸造[/gold][blue]{Amount}[/blue]。",
   "AFTER_GLOW_POWER.title": "余晖",
-  "AFTER_GLOW_POWER.description": "回合结束时，获得等同于手牌数的[gold]活力[/gold]。",
+  "AFTER_GLOW_POWER.description": "每当你花费{singleStarIcon}时，获得[gold]活力[/gold]。",
+  "AFTER_GLOW_POWER.smartDescription": "每当你花费{singleStarIcon}时，获得[blue]{Amount}[/blue][gold]活力[/gold]。",
   "COALESCE_POWER.title": "凝聚",
   "COALESCE_POWER.description": "[gold]消耗[/gold]牌时，铸造等同于层数的数值。",
-  "COALESCE_POWER.smartDescription": "[gold]消耗[/gold]任意牌时，[gold]铸造[/gold][blue]{Amount}[blue]。"
+  "COALESCE_POWER.smartDescription": "[gold]消耗[/gold]牌时，[gold]铸造[/gold][blue]{Amount}[blue]。"
 }

@@ -13,11 +13,7 @@ namespace RTE.Scripts.Powers;
 public sealed class ThronefallPower : PowerModel
 {
     public override PowerType Type => PowerType.Buff;
-
     public override PowerStackType StackType => PowerStackType.Counter;
-
-    public override bool IsInstanced => false;
-
     public override bool AllowNegative => false;
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<SovereignBlade>();

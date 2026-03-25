@@ -1,6 +1,7 @@
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -12,19 +13,15 @@ namespace RTE.Scripts.Powers;
 public sealed class AfterGlowPower : PowerModel
 {
     public override PowerType Type => PowerType.Buff;
-
     public override PowerStackType StackType => PowerStackType.None;
-    public override bool IsInstanced => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<VigorPower>()];
 
-    public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    public override async Task AfterStarsSpent(int amount, Player spender)
     {
-        if (side == base.Owner.Side && base.Owner.IsPlayer)
+        if (amount> 0 && spender == base.Owner.Player)
         {
             Flash();
-            CardPile hand = PileType.Hand.GetPile(base.Owner.Player);
-            int numberOfCardsInHand = hand.Cards.Count();
-            await PowerCmd.Apply<VigorPower>(base.Owner, numberOfCardsInHand, base.Owner, null);
+            await PowerCmd.Apply<VigorPower>(base.Owner, base.Amount, base.Owner, null);
         }
     }
 }

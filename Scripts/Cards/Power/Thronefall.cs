@@ -13,11 +13,11 @@ public class Thronefall : CardModel
 {
     private const string powerKey = "ThronefallDamage";
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(powerKey, 9)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar(powerKey, 6)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<SovereignBlade>();
 
-    public Thronefall() : base(1, CardType.Power, CardRarity.Rare, TargetType.AllAllies, true) { }
+    public Thronefall() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.AllAllies, true) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
@@ -25,6 +25,6 @@ public class Thronefall : CardModel
     }
     protected override void OnUpgrade()
     {
-        DynamicVars[powerKey].UpgradeValueBy(3);
+        DynamicVars[powerKey].UpgradeValueBy(2);
     }
 }

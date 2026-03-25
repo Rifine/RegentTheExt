@@ -16,7 +16,7 @@ public class ScatteredStars : CardModel
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
     public ScatteredStars() : base(0, CardType.Attack, CardRarity.Common, TargetType.AllEnemies) {}
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(5, ValueProp.Move),
+        new DamageVar(4, ValueProp.Move),
         new DynamicVar("HitsCount", 3),
         new ForgeVar(3),
     ];
@@ -38,6 +38,5 @@ public class ScatteredStars : CardModel
     protected override void OnUpgrade()
     {
         base.DynamicVars["HitsCount"].UpgradeValueBy(1);
-        base.DynamicVars.Forge.UpgradeValueBy(1);
     }
 }

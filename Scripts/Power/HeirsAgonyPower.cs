@@ -12,10 +12,7 @@ namespace RTE.Scripts.Powers;
 public sealed class HeirsAgonyPower : PowerModel
 {
     public override PowerType Type => PowerType.Buff;
-
-    public override PowerStackType StackType => PowerStackType.None;
-
-    public override bool IsInstanced => true;
+    public override PowerStackType StackType => PowerStackType.Counter;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
 
     public override async Task BeforeDamageReceived(PlayerChoiceContext choiceContext, Creature target, decimal amount, ValueProp props, Creature dealer, CardModel cardSource)
@@ -23,11 +20,11 @@ public sealed class HeirsAgonyPower : PowerModel
         if (target == base.Owner && base.Owner.IsPlayer)
         {
             Player player = base.Owner.Player;
-            decimal blocked_damage = Math.Min(player.Creature.Block, amount);
-            if (blocked_damage > 1)
+            if (player.Creature.Block >= amount)
             {
                 Flash();
-                await ForgeCmd.Forge(blocked_damage, player, this);
+                await ForgeCmd.Forge(Amount, player, this);
+                
             }
         }
     }
